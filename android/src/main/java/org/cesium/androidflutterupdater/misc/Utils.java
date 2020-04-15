@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package co.potatoproject.androidflutterupdater.misc;
+package org.cesium.androidflutterupdater.misc;
 
 import android.annotation.SuppressLint;
 import android.app.AlarmManager;
@@ -49,13 +49,13 @@ import java.util.regex.Pattern;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
 
-import co.potatoproject.androidflutterupdater.R;
-import co.potatoproject.androidflutterupdater.UpdatesDbHelper;
-import co.potatoproject.androidflutterupdater.controller.UpdaterController;
-import co.potatoproject.androidflutterupdater.controller.UpdaterService;
-import co.potatoproject.androidflutterupdater.model.Update;
-import co.potatoproject.androidflutterupdater.model.UpdateBaseInfo;
-import co.potatoproject.androidflutterupdater.model.UpdateInfo;
+import org.cesium.androidflutterupdater.R;
+import org.cesium.androidflutterupdater.UpdatesDbHelper;
+import org.cesium.androidflutterupdater.controller.UpdaterController;
+import org.cesium.androidflutterupdater.controller.UpdaterService;
+import org.cesium.androidflutterupdater.model.Update;
+import org.cesium.androidflutterupdater.model.UpdateBaseInfo;
+import org.cesium.androidflutterupdater.model.UpdateInfo;
 
 @SuppressWarnings("Convert2Lambda")
 public class Utils {

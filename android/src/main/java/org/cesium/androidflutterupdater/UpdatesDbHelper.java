@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package co.potatoproject.androidflutterupdater;
+package org.cesium.androidflutterupdater;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -22,7 +22,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.provider.BaseColumns;
 
-import co.potatoproject.androidflutterupdater.model.Update;
+import org.cesium.androidflutterupdater.model.Update;
 
 import java.io.File;
 import java.util.ArrayList;

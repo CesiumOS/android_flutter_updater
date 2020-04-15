@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package co.potatoproject.androidflutterupdater;
+package org.cesium.androidflutterupdater;
 
 import android.annotation.SuppressLint;
 import android.app.Notification;
@@ -31,14 +31,14 @@ import androidx.preference.PreferenceManager;
 
 import java.text.DateFormat;
 
-import co.potatoproject.androidflutterupdater.misc.BuildInfoUtils;
-import co.potatoproject.androidflutterupdater.misc.Constants;
-import co.potatoproject.androidflutterupdater.misc.StringGenerator;
+import org.cesium.androidflutterupdater.misc.BuildInfoUtils;
+import org.cesium.androidflutterupdater.misc.Constants;
+import org.cesium.androidflutterupdater.misc.StringGenerator;
 
 public class UpdaterReceiver extends BroadcastReceiver {
 
     public static final String ACTION_INSTALL_REBOOT =
-            "co.potatoproject.androidflutterupdater.action.INSTALL_REBOOT";
+            "org.cesium.androidflutterupdater.action.INSTALL_REBOOT";
 
     private static final String INSTALL_ERROR_NOTIFICATION_CHANNEL =
             "install_error_notification_channel";

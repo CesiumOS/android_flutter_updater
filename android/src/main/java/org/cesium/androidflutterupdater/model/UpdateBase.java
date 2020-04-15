@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package co.potatoproject.androidflutterupdater.model;
+package org.cesium.androidflutterupdater.model;
 
 public class UpdateBase implements UpdateBaseInfo {
 

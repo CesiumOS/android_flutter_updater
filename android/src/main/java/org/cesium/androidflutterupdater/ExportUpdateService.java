@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package co.potatoproject.androidflutterupdater;
+package org.cesium.androidflutterupdater;
 
 import android.annotation.SuppressLint;
 import android.app.NotificationChannel;
@@ -31,7 +31,7 @@ import java.io.File;
 import java.io.IOException;
 import java.text.NumberFormat;
 
-import co.potatoproject.androidflutterupdater.misc.FileUtils;
+import org.cesium.androidflutterupdater.misc.FileUtils;
 
 @SuppressWarnings("Convert2Lambda")
 public class ExportUpdateService extends Service {

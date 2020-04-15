@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package co.potatoproject.androidflutterupdater.controller;
+package org.cesium.androidflutterupdater.controller;
 
 import android.annotation.SuppressLint;
 import android.app.NotificationChannel;
@@ -32,14 +32,14 @@ import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 import android.text.format.Formatter;
 import android.util.Log;
 
-import co.potatoproject.androidflutterupdater.AndroidFlutterUpdaterPlugin;
-import co.potatoproject.androidflutterupdater.R;
-import co.potatoproject.androidflutterupdater.UpdaterReceiver;
-import co.potatoproject.androidflutterupdater.misc.BuildInfoUtils;
-import co.potatoproject.androidflutterupdater.misc.StringGenerator;
-import co.potatoproject.androidflutterupdater.misc.Utils;
-import co.potatoproject.androidflutterupdater.model.UpdateInfo;
-import co.potatoproject.androidflutterupdater.model.UpdateStatus;
+import org.cesium.androidflutterupdater.AndroidFlutterUpdaterPlugin;
+import org.cesium.androidflutterupdater.R;
+import org.cesium.androidflutterupdater.UpdaterReceiver;
+import org.cesium.androidflutterupdater.misc.BuildInfoUtils;
+import org.cesium.androidflutterupdater.misc.StringGenerator;
+import org.cesium.androidflutterupdater.misc.Utils;
+import org.cesium.androidflutterupdater.model.UpdateInfo;
+import org.cesium.androidflutterupdater.model.UpdateStatus;
 
 import java.io.IOException;
 import java.text.DateFormat;

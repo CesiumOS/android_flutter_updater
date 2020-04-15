@@ -1,4 +1,4 @@
-package co.potatoproject.androidflutterupdater;
+package org.cesium.androidflutterupdater;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -29,14 +29,14 @@ import java.util.List;
 import java.util.Locale;
 import java.util.UUID;
 
-import co.potatoproject.androidflutterupdater.controller.UpdaterController;
-import co.potatoproject.androidflutterupdater.controller.UpdaterService;
-import co.potatoproject.androidflutterupdater.download.DownloadClient;
-import co.potatoproject.androidflutterupdater.misc.Constants;
-import co.potatoproject.androidflutterupdater.misc.StringGenerator;
-import co.potatoproject.androidflutterupdater.misc.Utils;
-import co.potatoproject.androidflutterupdater.model.UpdateInfo;
-import co.potatoproject.androidflutterupdater.model.UpdateStatus;
+import org.cesium.androidflutterupdater.controller.UpdaterController;
+import org.cesium.androidflutterupdater.controller.UpdaterService;
+import org.cesium.androidflutterupdater.download.DownloadClient;
+import org.cesium.androidflutterupdater.misc.Constants;
+import org.cesium.androidflutterupdater.misc.StringGenerator;
+import org.cesium.androidflutterupdater.misc.Utils;
+import org.cesium.androidflutterupdater.model.UpdateInfo;
+import org.cesium.androidflutterupdater.model.UpdateStatus;
 import io.flutter.plugin.common.EventChannel;
 import io.flutter.plugin.common.EventChannel.StreamHandler;
 import io.flutter.plugin.common.MethodCall;

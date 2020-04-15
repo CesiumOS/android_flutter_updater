@@ -13,5 +13,5 @@ dependencies:
 
 flutter:
   plugin:
-    androidPackage: co.potatoproject.androidflutterupdater
+    androidPackage: org.cesium.androidflutterupdater
     pluginClass: AndroidFlutterUpdaterPlugin

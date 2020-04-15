@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package co.potatoproject.androidflutterupdater;
+package org.cesium.androidflutterupdater;
 
 import android.annotation.SuppressLint;
 import android.app.AlarmManager;
@@ -31,10 +31,10 @@ import android.util.Log;
 
 import org.json.JSONException;
 
-import co.potatoproject.androidflutterupdater.download.DownloadClient;
-import co.potatoproject.androidflutterupdater.misc.Constants;
-import co.potatoproject.androidflutterupdater.misc.Utils;
-import co.potatoproject.androidflutterupdater.model.UpdateInfo;
+import org.cesium.androidflutterupdater.download.DownloadClient;
+import org.cesium.androidflutterupdater.misc.Constants;
+import org.cesium.androidflutterupdater.misc.Utils;
+import org.cesium.androidflutterupdater.model.UpdateInfo;
 
 import java.io.File;
 import java.io.IOException;

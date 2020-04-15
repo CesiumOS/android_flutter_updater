@@ -1,4 +1,19 @@
 
+ * Copyright (C) 2020 The Potato Open Sauce Project
+ * Copyright (C) 2020 The CesiumOS Open Sauce Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+
 # android_flutter_updater
 
 A Flutter plugin to allow updating Android. Based on the OTA Updater by LineageOS.
@@ -6,7 +21,7 @@ A Flutter plugin to allow updating Android. Based on the OTA Updater by LineageO
 ## Getting Started
 - Make a new Flutter app and add the following to dependencies in your `pubspec.yaml`.
 ```
-  android_flutter_updater:  
+  android_flutter_updater:
     git:
       url: git://github.com/AgentFabulous/android_flutter_updater
 ```
@@ -41,14 +56,14 @@ This is necessary because this app accesses many hiddenapi of Android which aren
 ```
 - Add the following lines to the `application` tag of your `android/app/src/main/AndroidManifest.xml`:
 ```
-        <service android:name="co.potatoproject.androidflutterupdater.controller.UpdaterService" />
-        <service android:name="co.potatoproject.androidflutterupdater.ExportUpdateService" />
-        <receiver android:name="co.potatoproject.androidflutterupdater.UpdaterReceiver" android:exported="false">
+        <service android:name="org.cesium.androidflutterupdater.controller.UpdaterService" />
+        <service android:name="org.cesium.androidflutterupdater.ExportUpdateService" />
+        <receiver android:name="org.cesium.androidflutterupdater.UpdaterReceiver" android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
             </intent-filter>
         </receiver>
-        <receiver android:name="co.potatoproject.androidflutterupdater.UpdatesCheckReceiver">
+        <receiver android:name="org.cesium.androidflutterupdater.UpdatesCheckReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
             </intent-filter>
@@ -70,7 +85,7 @@ The value of this prop will be used in place of `{project}` this point on.
 - `ro.{project}.device` - Set this to your target device's codename.
 - `ro.{project}.ota_path` - Set this to the path you'd want to download files to. This path is relative to the default external storage. So, setting this to `PotatoCenter` would normally mean `/sdcard/PotatoCenter`.
 - `ro.{project}.type` - Set this to your build's release type. Can also be thought of as an OTA Channel (weekly, nightly, beta, etc).
-- `{project}.updater.uri` - Set this to your Server/API URL. `{device}` and `{type}` would be replaced by the current device and release-type/build-channel by the plugin as can be seen in the [method](https://github.com/AgentFabulous/android_flutter_updater/blob/8aea74a45668dcb19cf0bd5231dc704f6d94f1e6/android/src/main/java/co/potatoproject/androidflutterupdater/misc/Utils.java#L152-L162) and [fallback/default value](https://github.com/AgentFabulous/android_flutter_updater/blob/8aea74a45668dcb19cf0bd5231dc704f6d94f1e6/android/src/main/res/values/strings.xml#L30).
+- `{project}.updater.uri` - Set this to your Server/API URL. `{device}` and `{type}` would be replaced by the current device and release-type/build-channel by the plugin as can be seen in the [method](https://github.com/AgentFabulous/android_flutter_updater/blob/8aea74a45668dcb19cf0bd5231dc704f6d94f1e6/android/src/main/java/org.cesium/androidflutterupdater/misc/Utils.java#L152-L162) and [fallback/default value](https://github.com/AgentFabulous/android_flutter_updater/blob/8aea74a45668dcb19cf0bd5231dc704f6d94f1e6/android/src/main/res/values/strings.xml#L30).
 
 So, for [POSP](https://github.com/PotatoProject), it would look something like so:
 ```

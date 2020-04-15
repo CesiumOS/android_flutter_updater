@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="co.potatoproject.androidflutterupdaterexample">
+    package="org.cesium.androidflutterupdaterexample">
 
     <uses-permission android:name="android.permission.ACCESS_CACHE_FILESYSTEM" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -30,16 +30,16 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <service android:name="co.potatoproject.androidflutterupdater.controller.UpdaterService" />
-        <service android:name="co.potatoproject.androidflutterupdater.ExportUpdateService" />
+        <service android:name="org.cesium.androidflutterupdater.controller.UpdaterService" />
+        <service android:name="org.cesium.androidflutterupdater.ExportUpdateService" />
 
-        <receiver android:name="co.potatoproject.androidflutterupdater.UpdaterReceiver" android:exported="false">
+        <receiver android:name="org.cesium.androidflutterupdater.UpdaterReceiver" android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
             </intent-filter>
         </receiver>
 
-        <receiver android:name="co.potatoproject.androidflutterupdater.UpdatesCheckReceiver">
+        <receiver android:name="org.cesium.androidflutterupdater.UpdatesCheckReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
             </intent-filter>

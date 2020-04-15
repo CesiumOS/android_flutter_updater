@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package co.potatoproject.androidflutterupdater.controller;
+package org.cesium.androidflutterupdater.controller;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -22,12 +22,12 @@ import android.os.SystemProperties;
 import androidx.preference.PreferenceManager;
 import android.util.Log;
 
-import co.potatoproject.androidflutterupdater.R;
-import co.potatoproject.androidflutterupdater.misc.Constants;
-import co.potatoproject.androidflutterupdater.misc.FileUtils;
-import co.potatoproject.androidflutterupdater.misc.Utils;
-import co.potatoproject.androidflutterupdater.model.UpdateInfo;
-import co.potatoproject.androidflutterupdater.model.UpdateStatus;
+import org.cesium.androidflutterupdater.R;
+import org.cesium.androidflutterupdater.misc.Constants;
+import org.cesium.androidflutterupdater.misc.FileUtils;
+import org.cesium.androidflutterupdater.misc.Utils;
+import org.cesium.androidflutterupdater.model.UpdateInfo;
+import org.cesium.androidflutterupdater.model.UpdateStatus;
 
 import java.io.File;
 import java.io.IOException;

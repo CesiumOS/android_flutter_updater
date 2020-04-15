@@ -1,4 +1,4 @@
-group 'co.potatoproject.androidflutterupdater'
+group 'org.cesium.androidflutterupdater'
 version '1.0-SNAPSHOT'
 buildscript {
     repositories {
